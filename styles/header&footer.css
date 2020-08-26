@@ -1,0 +1,194 @@
+body,
+html {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 65%;
+}
+
+header {
+    background: white;
+    padding: 0px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #3c475f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+
+/* Mobile menu */
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right
+}
+
+.right {
+    display: flex;
+}
+
+.left {
+    display: flex;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+
+/* Navbar Toggle */
+
+.toggle {
+    cursor: pointer;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Tablet menu */
+
+@media all and (min-width: 468px) {
+    .menu {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+}
+
+
+/* Desktop menu */
+
+@media all and (min-width: 768px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .menu {
+        padding: 15px 0px;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+
+.search {
+    text-align: center;
+    width: 120%;
+}
+
+.searchbox {
+    transition: border .2s linear;
+    font-size: 12px;
+    width: 250px;
+    background: #e7f2f3;
+    color: #000;
+    padding: 8px 12px 8px 12px;
+    height: 25px;
+    border: 1px solid #e6ecf0;
+    border-radius: 50px;
+    outline: none;
+    font-family: Courier, 'Courier New', monospace;
+}
+
+.searchbox:focus {
+    transition: border .2s linear;
+    border: 2px solid rgb(37, 223, 248);
+}
+
+.searchbtn {
+    font-size: 12px;
+    color: #66757f;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px 0px;
+    position: relative;
+}
+
+footer p {
+    text-align: center;
+}
+
+.fa {
+    padding-top: 8px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+
+.Social-contact {
+    display: flex;
+    justify-items: flex-start;
+}

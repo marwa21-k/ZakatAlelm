@@ -1,0 +1,9 @@
+.searchicon {
+  background-color: rgb(52, 59, 74);
+  position: absolute;
+  left: 308px;
+  top: 38px;
+  width: 34px;
+  height: 34px;
+  z-index: 123;
+}

@@ -1,0 +1,54 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 8px;
+}
+
+#books {
+    padding: 0px 300px;
+    background-color: #e0e0e0;
+}
+
+#filters {
+    display: flex;
+    width: 400px;
+    padding-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 150px;
+}
+
+.book-list {
+    display: flex;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.postL {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 20px;
+}
+
+.postL img {
+    height: 250px;
+    width: 150px;
+}
+
+.user img {
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+}
